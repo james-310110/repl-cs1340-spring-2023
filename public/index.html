@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <link rel="stylesheet" href="../styles/main.css" type="text/css" />
+  </head>
+  <body>
+    <!-- Tell the browser what to show if JavaScript/TypeScript is disabled. -->
+    <noscript>This example requires JavaScript to run.</noscript>
+    <!-- To hold the entire REPL interface -->
+    <div class="repl">
+      <!-- To hold the command history -->
+      <div class="repl-history">
+        <table>
+          <thead></thead>
+          <tbody id="repl-results" data-testid="results" />
+        </table>
+      </div>
+      <hr />
+      <!-- To hold the command input box -->
+      <div class="repl-input">
+        <input
+          type="text"
+          class="repl-command-box"
+          placeholder="Type in command here. Press ENTER to run the command."
+          data-testid="command"
+        />
+      </div>
+    </div>
+    <!-- Load the script! Note: the .js extension is because browsers don't use TypeScript
+    directly. Instead, the author of the site needs to compile the TypeScript to JavaScript. -->
+    <script type="module" src="../src/main.js"></script>
+  </body>
+</html>
